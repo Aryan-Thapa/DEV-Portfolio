@@ -15,12 +15,15 @@ const Projects = () => {
       </motion.h2>
       <div>
         {PROJECTS.map((project, index) => (
-          <div key={index} className="mb-8 flex flex-wrap gap-2 lg:justify-center">
+          <div
+            key={index}
+            className="mb-8 flex flex-col items-center gap-4 lg:flex-row lg:items-start lg:justify-center"
+          >
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
-              className="w-full lg:w-1/4"
+              className="mx-auto lg:mx-0"
             >
               {" "}
               <div className="relative group w-fit">
