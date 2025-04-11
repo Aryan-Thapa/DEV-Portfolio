@@ -1,6 +1,7 @@
 import React from "react";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
 const Projects = () => {
   return (
     <div className="border-b border-neutral-900 pb-4">
@@ -14,7 +15,7 @@ const Projects = () => {
       </motion.h2>
       <div>
         {PROJECTS.map((project, index) => (
-          <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+          <div key={index} className="mb-8 flex flex-wrap gap-2 lg:justify-center">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
@@ -22,13 +23,22 @@ const Projects = () => {
               className="w-full lg:w-1/4"
             >
               {" "}
-              <img
-                src={project.image}
-                height={150}
-                width={150}
-                alt={project.title}
-                className="mb-6 rounded"
-              />
+              <div className="relative group w-fit">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="rounded overflow-hidden w-[300px] h-[300px]"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-0 opacity-0 group-hover:opacity-70 transition-opacity duration-300 flex items-center justify-center rounded">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub className="w-10 h-10 rounded-full transition-transform duration-300 ease-in-out transform hover:scale-110 text-white border-1 border-gray-600" />
+                  </a>
+                </div>
+              </div>
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}

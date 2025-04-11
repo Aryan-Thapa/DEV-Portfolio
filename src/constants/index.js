@@ -1,6 +1,6 @@
-import CollabSpace from "../assets/Projects/CollabSpace.jpg";
-import Portfolio from "../assets/Projects/Portfolio.jpg";
-import Sorting from "../assets/Projects/Sorting.jpg";
+import CollabSpace from "../assets/Projects/CollabSpace.png";
+import Portfolio from "../assets/Projects/Portfolio.png";
+import Noteify from "../assets/Projects/Noteify.png";
 export const HERO_CONTENT = `Enthusiastic and detail-oriented Software Engineer eager to contribute to impactful projects and drive business
 success. Passionate about learning, problem-solving, and building efficient solutions while growing professionally in
 a dynamic environment.`;
@@ -25,6 +25,13 @@ export const EXPERIENCES = [
       "Kubernetes",
     ],
   },
+  {
+    year: "May 2023 - August 2023",
+    role: "Data Science Intern",
+    company: "Celebal Technologies",
+    description: `Led a Stock Price Prediction project and collaborated cross-functionally while staying up-to-date with data science and machine learning advancements.`,
+    technologies: ["Python", "Data Science", "AI & ML", "Streamlit"],
+  },
 ];
 
 export const CONTACT = {
@@ -40,6 +47,7 @@ export const PROJECTS = [
     description:
       "A full-stack team collaboration tool using React.js, Django REST Framework, and JWT authentication with role-based access control (RBAC), dynamic UI components, and full CRUD functionality for workspaces, projects, and tasks.",
     technologies: ["React", "DjangoRestFramework", "Tailwind", "RTKQuery"],
+    github: "https://github.com/Aryan-Thapa/Team-Collaboration-Tool",
   },
   {
     title: "Portfolio Website",
@@ -47,12 +55,14 @@ export const PROJECTS = [
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["React", "Tailwind", "Framermotion"],
+    github: "https://github.com/Aryan-Thapa/DEV-Portfolio",
   },
   {
-    title: "Sorting Visualizer",
-    image: Sorting,
+    title: "Noteify",
+    image: Noteify,
     description:
-      "An interactive visualization tool for demonstrating sorting algorithms using HTML, CSS, and JavaScript.",
-    technologies: ["HTML", "CSS", "JavaScript"],
+      "Noteify is a sleek and efficient notes-saving application designed to help you capture, organize, and manage your thoughts seamlessly",
+    technologies: ["React", "Redux", "Tailwind"],
+    github: "https://github.com/Aryan-Thapa/Noteify",
   },
 ];
