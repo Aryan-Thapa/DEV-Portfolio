@@ -27,7 +27,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="rounded overflow-hidden w-[300px] h-[300px]"
+                  className="rounded overflow-hidden w-[300px] h-[300px] object-fit"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-0 opacity-0 group-hover:opacity-70 transition-opacity duration-300 flex items-center justify-center rounded">
                   <a
