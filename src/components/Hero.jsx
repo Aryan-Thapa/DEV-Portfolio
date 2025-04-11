@@ -52,6 +52,9 @@ const Hero = () => {
               transition={{duration:1, delay:1}}
               src={ProfilePicture}
               alt="pfp"
+              className="rounded-lg shadow-xl"
+              height={400}
+              width={400}
             />
           </div>
         </div>
