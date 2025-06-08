@@ -61,8 +61,8 @@ export const PROJECTS = [
     title: "Noteify",
     image: Noteify,
     description:
-      "Noteify is a sleek and efficient notes-saving application designed to help you capture, organize, and manage your thoughts seamlessly",
-    technologies: ["React", "Redux", "Tailwind"],
-    github: "https://github.com/Aryan-Thapa/Noteify",
+      "Noteify is a MERN-stack note-taking app with rich-text editing, AI-powered summaries, autosave, and session persistence. Implemented secure REST APIs with JWT authentication, Redux Toolkit, and a responsive UI using Tailwind CSS and Framer Motion",
+    technologies: ["React", "Redux", "Tailwind","Node JS", "Express", "MongoDB"],
+    github: "https://github.com/Aryan-Thapa/Noteify-MERN",
   },
 ];
